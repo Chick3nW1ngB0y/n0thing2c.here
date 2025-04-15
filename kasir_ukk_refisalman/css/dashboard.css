@@ -1,0 +1,348 @@
+/* Root Variables */
+:root {
+    --color-black: #000000;
+    --color-cyan: #e8f9ff;
+    --color-dark-blue: #001f3f;
+    --color-violet: #ec10cb;
+    --color-white: #ffffff;
+}
+
+/* Success Alert */
+.alert-success {
+    background-color: #28a745; /* Green background */
+    color: var(--color-white); /* Text color */
+    border: 1px solid #28a745;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Error Alert */
+.alert-danger {
+    background-color: #dc3545; /* Red background */
+    color: var(--color-white); /* Text color */
+    border: 1px solid #dc3545;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* General Styles */
+body {
+    background: var(--color-violet) url('../asset/PunklordeBG.gif');
+    background-size: cover;
+    color: var(--color-white);
+    font-family: 'Bahnschrift', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, a, button, input, select, textarea {
+    font-family: 'Bahnschrift', sans-serif !important;
+}
+
+/* Buttons */
+button {
+    border-radius: 20px;
+    border-style: none;
+    cursor: pointer;
+    font-family: 'Bahnschrift', sans-serif;
+    gap: 10px;
+    padding: 3px 10px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Primary Button (Tambah ke Keranjang, Bayar) */
+button.btn-primary {
+    background-color: var(--color-violet); /* Button background color */
+    color: var(--color-white); /* Button text color */
+    border: 1px solid var(--color-violet);
+}
+
+button.btn-primary:hover {
+    background-color: var(--color-white); /* Hover background color */
+    color: var(--color-violet); /* Hover text color */
+    border-color: var(--color-violet);
+}
+
+/* Danger Button (Hapus Semua) */
+button.btn-danger {
+    background-color: #dc3545; /* Red background */
+    color: var(--color-white);
+    border: 1px solid #dc3545;
+}
+
+button.btn-danger:hover {
+    background-color: var(--color-white);
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+button[type=delete] {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+button[type=delete]:hover {
+    background-color: var(--color-white);
+    color: #ff0000;
+}
+
+button[type=edit] {
+    background-color: green;
+    color: #ffffff;
+}
+
+button[type=edit]:hover {
+    background-color: white;
+    color: green;
+}
+
+/* Links */
+a[href="../crud/tambah_petugas.php"],
+a[href="../crud/tambah_produk.php"] {
+    background-color: var(--color-violet);
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+a[href="../crud/tambah_petugas.php"]:hover,
+a[href="../crud/tambah_produk.php"]:hover {
+    background-color: var(--color-white);
+    color: var(--color-violet);
+}
+
+.batal-btn {
+    background-color: rgb(222, 10, 10);
+    border-radius: 5px;
+    color: var(--color-white);
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.batal-btn:hover {
+    background-color: #ffffff;
+    color: rgb(222, 10, 10);
+}
+
+.card {
+    background-color: var(--color-dark-blue); /* Card background color */
+    color: var(--color-white); /* Card text color */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: var(--color-violet); /* Header background color */
+    color: var(--color-white); /* Header text color */
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+.form-group label {
+    width: 150px; /* Adjust width as needed */
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.form-group input {
+    flex-grow: 1;
+}
+
+/* Header */
+header {
+    background: var(--color-dark-blue);
+    color: var(--color-white);
+    opacity: 0.8;
+    padding: 15px;
+    text-align: left;
+}
+
+.header-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+}
+
+header img {
+    height: auto;
+    margin-left: 20px;
+    width: 100px;
+}
+
+.welcome-text {
+    color: var(--color-white);
+    flex: 1;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Form Labels */
+label {
+    color: var(--color-white); /* Change label text color */
+    font-weight: bold;
+}
+
+/* Form Inputs */
+input {
+    background-color: var(--color-dark-blue); /* Input background color */
+    color: var(--color-white); /* Input text color */
+    border: 1px solid var(--color-violet); /* Input border color */
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--color-cyan); /* Border color when focused */
+    box-shadow: 0 0 5px var(--color-cyan); /* Glowing effect */
+}
+
+/* Navigation */
+.nav-pills .nav-link {
+    color: white !important;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #007bff;
+    color: white !important;
+    font-weight: bold;
+    box-shadow: 0 0 10px #6f42c1; /* Glowing effect */
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    justify-content: left;
+    list-style: none;
+    opacity: 0.8;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    border-radius: 5px;
+    color: var(--color-white);
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: var(--color-violet);
+    color: var(--color-dark-blue);
+}
+
+/* Sections */
+.logo-minggu-dashboard {
+    height: auto;
+    width: auto;
+}
+
+.sections-container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+section {
+    background: var(--color-dark-blue);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    opacity: 0.8;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Tables */
+.table-dark th {
+    background-color: #342d76;
+    color: white;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #444444;
+    color: white;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #1f1f1f;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #2a2a2a;
+}
+
+/* Table Header */
+.table thead th {
+    background-color: var(--color-dark-blue); /* Header background color */
+    color: var(--color-white); /* Header text color */
+    font-weight: bold;
+}
+
+/* Table Rows */
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #2a2a2a; /* Even row background */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #1f1f1f; /* Odd row background */
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--color-cyan); /* Hover background color */
+    color: var(--color-dark-blue); /* Hover text color */
+}
+
+/* Buttons for Edit and Delete */
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: black;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+/* Main Content */
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    opacity: 90%;
+    width: 100%;
+}
