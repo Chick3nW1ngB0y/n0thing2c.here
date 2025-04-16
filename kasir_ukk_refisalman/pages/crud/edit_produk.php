@@ -43,7 +43,7 @@ if (!$product) {
         </div>
         <nav>
             <ul>
-            <li><a href="daftar_produk.php" class="batal-btn">Batal</a></li>
+            <li><a href="../daftar_produk.php" class="batal-btn">Batal</a></li>
         </ul>
     </header>
     <main>

@@ -65,7 +65,7 @@ if ($_SESSION['role'] === 'admin') {
                             <?php if ($row['Role'] !== 'admin'): ?>
                                 <form action="../../config/delete_petugas.php" method="POST" class="d-inline" onsubmit="return confirm('Anda yakin mau hapus petugas ini?');">
                                     <input type="hidden" name="PetugasID" value="<?php echo $row['PetugasID']; ?>">
-                                    <button type="submit" name="delete" class="btn btn-danger btn-sm">Delete</button>
+                                    <button type="submit" name="delete" class="btn btn-danger btn-sm">Hapus</button>
                                 </form>
                             <?php endif; ?>
                         </td>

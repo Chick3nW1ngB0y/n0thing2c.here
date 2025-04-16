@@ -27,7 +27,7 @@
 
 /* General Styles */
 body {
-    background: var(--color-violet) url('../asset/PunklordeBG.gif');
+    background: var(--color-violet) url('../asset/hertabg.png');
     background-size: cover;
     color: var(--color-white);
     font-family: 'Bahnschrift', sans-serif;

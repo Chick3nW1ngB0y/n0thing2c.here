@@ -62,7 +62,7 @@ if ($_SESSION['role'] === 'admin') {
                                     <a href="crud/edit_produk.php?id=<?php echo $row['ProdukID']; ?>" class="btn btn-warning btn-sm">Edit</a>
                                     <form action="crud/delete_produk.php" method="POST" class="d-inline" onsubmit="return confirm('Anda yakin mau hapus produk ini?');">
                                         <input type="hidden" name="ProdukID" value="<?php echo $row['ProdukID']; ?>">
-                                        <button type="submit" name="delete" class="btn btn-danger btn-sm">Delete</button>
+                                        <button type="submit" name="delete" class="btn btn-danger btn-sm">Hapus</button>
                                     </form>
                                 </td>
                             </tr>

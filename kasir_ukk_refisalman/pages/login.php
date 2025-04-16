@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Aplikasi kasir hasil proyek SMK Mandalahayu untuk pengelolaan transaksi yang mudah dan efisien.">
     <title>Kasir UKK</title>
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../../css/login.css">
 </head>
 <body>
     <section id="login">

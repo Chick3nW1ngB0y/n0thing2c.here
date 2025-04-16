@@ -28,7 +28,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
 ?>
 <header>
     <div class="header-container d-flex justify-content-between align-items-center">
-        <h1>Kasir Punklorde</h1>
+        <h1>Herta Shop</h1>
         <div class="welcome-text">
             <p>Welcome, <?php echo htmlspecialchars($role); ?>: <?php echo htmlspecialchars($namaPetugas); ?></p>
         </div>
